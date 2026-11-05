@@ -3,57 +3,160 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Ember Survivors</title>
+<meta name="description" content="Privacy Policy for Ember Survivors by Fizzle Games.">
 <link rel="icon" type="image/jpeg" href="../../img/ember.jpg">
 <link rel="apple-touch-icon" href="../../img/ember.jpg">
-<title>Ember Survivors - Privacy Policy</title>
 <style>
-  body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
-  h1 { font-size: 1.6em; }
-  h2 { font-size: 1.2em; margin-top: 30px; }
-.top{display:flex;align-items:center;gap:16px;margin-bottom:8px}.top img{width:72px;height:72px;border-radius:16px;flex:none}.top h1{margin:0;line-height:1.25}</style>
+  :root { --bg: #15110b; --card: #211a11; --text: #f3ebdd; --muted: #bba98f; --accent: #f5a524; --line: #3b2f1f; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; line-height: 1.6; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 56px; }
+  .lang { display: flex; justify-content: flex-end; gap: 6px; margin-bottom: 20px; }
+  .lang button { background: transparent; color: var(--muted); border: 1px solid var(--line); border-radius: 8px; padding: 4px 12px; font: inherit; font-size: .9em; cursor: pointer; }
+  .lang button.on { background: var(--accent); border-color: var(--accent); color: #1a1205; }
+  .hero { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+  .hero img { width: 140px; height: 140px; border-radius: 30px; box-shadow: 0 8px 30px rgba(245, 165, 36, .25); display: block; }
+  h1 { font-size: 2em; margin: 0 0 4px; line-height: 1.2; }
+  .by { color: var(--muted); margin: 0 0 14px; }
+  .btns { display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 10px 18px; border-radius: 10px; background: var(--accent); color: #1a1205; text-decoration: none; font-weight: 600; }
+  .btn.alt { background: transparent; border: 1px solid var(--line); color: var(--text); }
+  .title { margin: 40px 0 0; font-size: 1.6em; }
+  .updated { color: var(--muted); margin: 2px 0 0; font-size: .95em; }
+  h2 { font-size: 1.15em; margin: 30px 0 8px; color: var(--accent); }
+  ul { padding-left: 20px; margin: 0; }
+  li { margin: 6px 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin-top: 12px; }
+  a { color: #ffc35c; }
+  footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9em; }
+  html[lang="en"] [data-lang="tr"], html[lang="tr"] [data-lang="en"] { display: none !important; }
+</style>
+<script>
+  // Turkish browsers see Turkish first; everyone else sees English. The buttons switch it.
+  (function () {
+    var l = "en";
+    try { l = localStorage.getItem("lang") || ((navigator.language || "").toLowerCase().indexOf("tr") === 0 ? "tr" : "en"); } catch (e) {}
+    document.documentElement.lang = l;
+  })();
+  function setLang(l) {
+    document.documentElement.lang = l;
+    try { localStorage.setItem("lang", l); } catch (e) {}
+    document.querySelectorAll(".lang button").forEach(function (b) { b.classList.toggle("on", b.dataset.l === l); });
+  }
+  document.addEventListener("DOMContentLoaded", function () { setLang(document.documentElement.lang); });
+</script>
 </head>
 <body>
-<div class="top"><a href="https://fizzlegames.github.io/"><img src="../../img/ember.jpg" alt="Ember Survivors"></a><h1>Privacy Policy for Ember Survivors</h1></div>
-<p>Last updated: October 2026</p>
+<main>
+  <div class="lang">
+    <button type="button" data-l="en" onclick="setLang('en')">English</button>
+    <button type="button" data-l="tr" onclick="setLang('tr')">Türkçe</button>
+  </div>
 
-<p>FizzleGames ("we", "us") operates the mobile game Ember Survivors (the "App"). This page informs you of our policies regarding the collection, use, and disclosure of information when you use our App.</p>
+  <div class="hero">
+    <a href="https://fizzlegames.github.io/"><img src="../../img/ember.jpg" alt="Ember Survivors"></a>
+    <div>
+      <h1>Ember Survivors</h1>
+      <p class="by" data-lang="en">by Fizzle Games · iPhone, iPad &amp; Android</p>
+      <p class="by" data-lang="tr">Fizzle Games · iPhone, iPad ve Android</p>
+      <div class="btns">
+        <a class="btn" href="https://apps.apple.com/app/id6809781155">App Store</a>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.fizzlegames.embersurvivors">Google Play</a>
+        <a class="btn alt" href="https://fizzlegames.github.io/"><span data-lang="en">More games</span><span data-lang="tr">Diğer oyunlar</span></a>
+      </div>
+    </div>
+  </div>
 
-<h2>Information We Collect</h2>
-<p>The App itself does not require account creation or collect personally identifiable information directly. However, the App uses third-party services that may collect information used to identify you:</p>
-<ul>
-<li><strong>Google AdMob</strong> - used to display advertisements. AdMob may collect device identifiers (such as the advertising identifier), IP address, and ad interaction data to serve and measure ads.</li>
-<li><strong>Google Play Billing / Apple App Store In-App Purchase / Unity In-App Purchasing</strong> - used to process in-app purchases. Purchase transactions are handled by Google Play or Apple; we do not store your payment information.</li>
-<li><strong>Unity Gaming Services</strong> - used to support in-app purchase functionality.</li>
-<li><strong>Firebase Cloud Messaging</strong> - used to send push notifications. It may collect a device push token and basic device information to deliver notifications.</li>
-</ul>
+  <section data-lang="en">
+    <h1 class="title">Privacy Policy</h1>
+    <p class="updated">Last updated: October 2026</p>
+    <p>Fizzle Games ("we", "us") operates the mobile game Ember Survivors (the "App"). This page informs you of our policies regarding the collection, use, and disclosure of information when you use our App.</p>
 
-<h2>Tracking (iOS)</h2>
-<p>On iOS, the App asks for your permission through Apple's App Tracking Transparency prompt before the advertising identifier (IDFA) is used for personalized advertising. If you choose "Ask App Not to Track", ads may still be shown but will not be personalized using the advertising identifier. You can change this choice at any time in your device Settings.</p>
+    <h2>Information we collect</h2>
+    <p>The App itself does not require account creation or collect personally identifiable information directly. However, the App uses third-party services that may collect information used to identify you:</p>
+    <div class="card">
+      <ul>
+        <li><strong>Google AdMob</strong> – used to display advertisements. AdMob may collect device identifiers (such as the advertising identifier), IP address, and ad interaction data to serve and measure ads.</li>
+        <li><strong>Google Play Billing / Apple App Store In-App Purchase / Unity In-App Purchasing</strong> – used to process in-app purchases. Purchase transactions are handled by Google Play or Apple; we do not store your payment information.</li>
+        <li><strong>Unity Gaming Services</strong> – used to support in-app purchase functionality.</li>
+        <li><strong>Firebase Cloud Messaging</strong> – used to send push notifications. It may collect a device push token and basic device information to deliver notifications.</li>
+      </ul>
+    </div>
 
-<h2>Push Notifications</h2>
-<p>The App may ask for permission to send push notifications, for example about game updates. You can turn notifications off at any time in your device settings.</p>
+    <h2>Tracking (iOS)</h2>
+    <p>On iOS, the App asks for your permission through Apple's App Tracking Transparency prompt before the advertising identifier (IDFA) is used for personalized advertising. If you choose "Ask App Not to Track", ads may still be shown but will not be personalized using the advertising identifier. You can change this choice at any time in your device Settings.</p>
 
-<h2>Local Data Storage</h2>
-<p>The App stores game progress, settings, and currency balances locally on your device. This data is not transmitted to our servers.</p>
+    <h2>Push notifications</h2>
+    <p>The App may ask for permission to send push notifications, for example about game updates. You can turn notifications off at any time in your device settings.</p>
 
-<h2>Third-Party Privacy Policies</h2>
-<p>For more information about how our third-party partners handle data, please review:</p>
-<ul>
-<li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
-<li><a href="https://support.google.com/admob/answer/6128543" target="_blank">Google AdMob Data Collection</a></li>
-<li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy and Security</a></li>
-<li><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></li>
-<li><a href="https://unity.com/legal/privacy-policy" target="_blank">Unity Privacy Policy</a></li>
-</ul>
+    <h2>Local data storage</h2>
+    <p>The App stores game progress, settings, and currency balances locally on your device. This data is not transmitted to our servers.</p>
 
-<h2>Children's Privacy</h2>
-<p>The App is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+    <h2>Third-party privacy policies</h2>
+    <p>For more information about how our third-party partners handle data, please review:
+      <a href="https://policies.google.com/privacy">Google</a> ·
+      <a href="https://support.google.com/admob/answer/6128543">Google AdMob</a> ·
+      <a href="https://firebase.google.com/support/privacy">Firebase</a> ·
+      <a href="https://www.apple.com/legal/privacy/">Apple</a> ·
+      <a href="https://unity.com/legal/privacy-policy">Unity</a></p>
 
-<h2>Changes to This Privacy Policy</h2>
-<p>We may update our Privacy Policy from time to time. Changes will be posted on this page.</p>
+    <h2>Children's privacy</h2>
+    <p>The App is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
 
-<h2>Contact Us</h2>
-<p>If you have any questions about this Privacy Policy, contact us at: sseemmiihh.kcb@gmail.com</p>
+    <h2>Changes to this Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. Changes will be posted on this page.</p>
 
+    <h2>Contact us</h2>
+    <p>If you have any questions about this Privacy Policy, contact us at: <a href="mailto:sseemmiihh.kcb@gmail.com">sseemmiihh.kcb@gmail.com</a></p>
+  </section>
+
+  <section data-lang="tr">
+    <h1 class="title">Gizlilik Politikası</h1>
+    <p class="updated">Son güncelleme: Ekim 2026</p>
+    <p>Fizzle Games ("biz"), Ember Survivors mobil oyununu ("Uygulama") yayınlamaktadır. Bu sayfa, Uygulamayı kullandığınızda bilgilerin nasıl toplandığı, kullanıldığı ve paylaşıldığı hakkındaki politikalarımızı açıklar.</p>
+
+    <h2>Topladığımız bilgiler</h2>
+    <p>Uygulama hesap oluşturmanızı istemez ve kişisel olarak sizi tanımlayan bilgileri doğrudan toplamaz. Ancak Uygulama, sizi tanımlamak için kullanılabilecek bilgileri toplayabilen üçüncü taraf hizmetler kullanır:</p>
+    <div class="card">
+      <ul>
+        <li><strong>Google AdMob</strong> – reklam göstermek için kullanılır. AdMob, reklamları sunmak ve ölçmek için cihaz kimliklerini (reklam kimliği gibi), IP adresini ve reklam etkileşim verilerini toplayabilir.</li>
+        <li><strong>Google Play Faturalandırma / Apple App Store Uygulama İçi Satın Alma / Unity In-App Purchasing</strong> – uygulama içi satın almaları işlemek için kullanılır. Satın alma işlemleri Google Play veya Apple tarafından yürütülür; ödeme bilgilerinizi saklamıyoruz.</li>
+        <li><strong>Unity Gaming Services</strong> – uygulama içi satın alma işlevini desteklemek için kullanılır.</li>
+        <li><strong>Firebase Cloud Messaging</strong> – anlık bildirim göndermek için kullanılır. Bildirimleri iletmek için cihaz bildirim anahtarını (push token) ve temel cihaz bilgilerini toplayabilir.</li>
+      </ul>
+    </div>
+
+    <h2>Takip (iOS)</h2>
+    <p>iOS'ta Uygulama, reklam kimliğini (IDFA) kişiselleştirilmiş reklamlar için kullanmadan önce Apple'ın Uygulama Takip Şeffaflığı (App Tracking Transparency) penceresiyle izninizi ister. "Uygulamaya Takip Etmemesini Sor" seçeneğini seçerseniz reklamlar yine gösterilebilir ancak reklam kimliği kullanılarak kişiselleştirilmez. Bu tercihi istediğiniz zaman cihaz Ayarları'ndan değiştirebilirsiniz.</p>
+
+    <h2>Anlık bildirimler</h2>
+    <p>Uygulama, örneğin oyun güncellemeleri hakkında anlık bildirim göndermek için izin isteyebilir. Bildirimleri istediğiniz zaman cihaz ayarlarından kapatabilirsiniz.</p>
+
+    <h2>Cihazda saklanan veriler</h2>
+    <p>Uygulama oyun ilerlemesini, ayarları ve oyun içi para bakiyelerini cihazınızda saklar. Bu veriler sunucularımıza gönderilmez.</p>
+
+    <h2>Üçüncü taraf gizlilik politikaları</h2>
+    <p>Üçüncü taraf iş ortaklarımızın verileri nasıl işlediği hakkında daha fazla bilgi için:
+      <a href="https://policies.google.com/privacy">Google</a> ·
+      <a href="https://support.google.com/admob/answer/6128543">Google AdMob</a> ·
+      <a href="https://firebase.google.com/support/privacy">Firebase</a> ·
+      <a href="https://www.apple.com/legal/privacy/">Apple</a> ·
+      <a href="https://unity.com/legal/privacy-policy">Unity</a></p>
+
+    <h2>Çocukların gizliliği</h2>
+    <p>Uygulama 13 yaş altındaki çocuklara yönelik değildir. 13 yaş altındaki çocuklardan bilerek kişisel bilgi toplamayız.</p>
+
+    <h2>Bu politikadaki değişiklikler</h2>
+    <p>Gizlilik Politikamızı zaman zaman güncelleyebiliriz. Değişiklikler bu sayfada yayınlanır.</p>
+
+    <h2>Bize ulaşın</h2>
+    <p>Bu Gizlilik Politikası hakkında sorularınız için: <a href="mailto:sseemmiihh.kcb@gmail.com">sseemmiihh.kcb@gmail.com</a></p>
+  </section>
+
+  <footer>© 2026 Fizzle Games ·
+    <a href="https://fizzlegames.github.io/"><span data-lang="en">More games</span><span data-lang="tr">Diğer oyunlar</span></a>
+  </footer>
+</main>
 </body>
 </html>
