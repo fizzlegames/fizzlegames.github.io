@@ -1,54 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – War Survivor Last Stand</title>
+<meta name="description" content="Privacy Policy for War Survivor Last Stand by Fizzle Games.">
 <link rel="icon" type="image/jpeg" href="../icon.jpg">
 <link rel="apple-touch-icon" href="../icon.jpg">
-<title>Privacy Policy – War Survivor Last Stand</title>
-<style>body{font-family:Arial,sans-serif;max-width:760px;margin:40px auto;padding:0 16px;line-height:1.6;color:#222}h1{font-size:26px}h2{font-size:19px;margin-top:28px}.top{display:flex;align-items:center;gap:16px;margin-bottom:8px}.top img{width:72px;height:72px;border-radius:16px;flex:none}.top h1{margin:0;line-height:1.25}</style>
+<style>
+  :root { --bg: #14100e; --card: #1f1915; --text: #f1e9e2; --muted: #b8aa9e; --accent: #ff5a2c; --line: #3a2e26; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; line-height: 1.6; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 56px; }
+  .lang { display: flex; justify-content: flex-end; gap: 6px; margin-bottom: 20px; }
+  .lang button { background: transparent; color: var(--muted); border: 1px solid var(--line); border-radius: 8px; padding: 4px 12px; font: inherit; font-size: .9em; cursor: pointer; }
+  .lang button.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .hero { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+  .hero img { width: 140px; height: 140px; border-radius: 30px; box-shadow: 0 8px 30px rgba(255, 90, 44, .25); display: block; }
+  h1 { font-size: 2em; margin: 0 0 4px; line-height: 1.2; }
+  .by { color: var(--muted); margin: 0 0 14px; }
+  .btns { display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 10px 18px; border-radius: 10px; color: #fff; text-decoration: none; font-weight: 600; }
+  .btn.soon { background: transparent; border: 1px dashed var(--line); color: var(--muted); font-weight: 500; }
+  .btn.alt { background: transparent; border: 1px solid var(--line); color: var(--text); }
+  .title { margin: 40px 0 0; font-size: 1.6em; }
+  .updated { color: var(--muted); margin: 2px 0 0; font-size: .95em; }
+  h2 { font-size: 1.15em; margin: 30px 0 8px; color: var(--accent); }
+  ul { padding-left: 20px; margin: 0; }
+  li { margin: 6px 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin-top: 12px; }
+  a { color: #ff8a63; }
+  footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9em; }
+  html[lang="en"] [data-lang="tr"], html[lang="tr"] [data-lang="en"] { display: none !important; }
+</style>
+<script>
+  // Turkish browsers see Turkish first; everyone else sees English. The buttons switch it.
+  (function () {
+    var l = "en";
+    try { l = localStorage.getItem("lang") || ((navigator.language || "").toLowerCase().indexOf("tr") === 0 ? "tr" : "en"); } catch (e) {}
+    document.documentElement.lang = l;
+  })();
+  function setLang(l) {
+    document.documentElement.lang = l;
+    try { localStorage.setItem("lang", l); } catch (e) {}
+    document.querySelectorAll(".lang button").forEach(function (b) { b.classList.toggle("on", b.dataset.l === l); });
+  }
+  document.addEventListener("DOMContentLoaded", function () { setLang(document.documentElement.lang); });
+</script>
 </head>
 <body>
-<div class="top"><a href="https://fizzlegames.github.io/"><img src="../icon.jpg" alt="War Survivor Last Stand"></a><h1>Privacy Policy – War Survivor Last Stand</h1></div>
-<p>Last updated: October 14, 2026</p>
-<p>This policy describes how "War Survivor Last Stand" ("the app"), published by Fizzle Games, handles information.</p>
+<main>
+  <div class="lang">
+    <button type="button" data-l="en" onclick="setLang('en')">English</button>
+    <button type="button" data-l="tr" onclick="setLang('tr')">Türkçe</button>
+  </div>
 
-<h2>Information we collect</h2>
-<p>We do not ask you to create an account and we do not collect your name, email or precise location. Game progress (gold, diamonds, unlocked characters and maps, best scores, settings) is stored locally on your device and is not sent to our servers.</p>
+  <div class="hero">
+    <a href="https://fizzlegames.github.io/"><img src="../icon.jpg" alt="War Survivor Last Stand"></a>
+    <div>
+      <h1>War Survivor Last Stand</h1>
+      <p class="by" data-lang="en">by Fizzle Games · iPhone, iPad, Mac &amp; Android</p>
+      <p class="by" data-lang="tr">Fizzle Games · iPhone, iPad, Mac ve Android</p>
+      <div class="btns">
+        <span class="btn soon"><span data-lang="en">App Store &amp; Google Play – coming soon</span><span data-lang="tr">App Store ve Google Play – yakında</span></span>
+        <a class="btn alt" href="https://fizzlegames.github.io/"><span data-lang="en">More games</span><span data-lang="tr">Diğer oyunlar</span></a>
+      </div>
+    </div>
+  </div>
 
-<h2>Third-party services</h2>
-<p>The app uses third-party services that may collect and process certain data:</p>
-<ul>
-<li><b>Google AdMob (advertising):</b> may collect the advertising identifier, device information, IP address and ad interaction data to show and measure ads, including optional rewarded ads.</li>
-<li><b>Firebase Cloud Messaging (notifications):</b> uses a device/installation identifier and push token to deliver push notifications.</li>
-<li><b>Google Play Billing / Unity IAP (in-app purchases):</b> purchases are processed by Google Play (or the Apple App Store on iOS). We do not receive or store your payment details.</li>
-<li><b>Unity Gaming Services:</b> may process device information required to operate in-app purchases.</li>
-</ul>
-<p>These services have their own privacy policies:</p>
-<ul>
-<li><a href="https://policies.google.com/privacy">Google</a></li>
-<li><a href="https://support.google.com/admob/answer/6128543">Google AdMob data collection</a></li>
-<li><a href="https://firebase.google.com/support/privacy">Firebase</a></li>
-<li><a href="https://unity.com/legal/privacy-policy">Unity</a></li>
-<li><a href="https://www.apple.com/legal/privacy/">Apple</a></li>
-</ul>
+  <section data-lang="en">
+    <h1 class="title">Privacy Policy</h1>
+    <p class="updated">Last updated: November 5, 2026</p>
+    <p>This policy describes how "War Survivor Last Stand" ("the app"), published by Fizzle Games, handles information.</p>
 
-<h2>Advertising</h2>
-<p>The app shows ads. On Android you can reset or opt out of ad personalization in your device settings (Settings &gt; Google &gt; Ads). On iOS the app asks for permission through Apple's App Tracking Transparency prompt before the advertising identifier is used; if you decline, ads may still be shown but will not be personalized. You can change this choice at any time in your device settings.</p>
+    <h2>Information we collect</h2>
+    <p>We do not ask you to create an account and we do not collect your name, email or precise location. Game progress (gold, diamonds, unlocked characters and maps, best scores, settings) is stored locally on your device and is not sent to our servers.</p>
 
-<h2>Push notifications</h2>
-<p>The app may ask for permission to send notifications, for example about game updates. You can turn notifications off at any time in your device settings.</p>
+    <h2>Third-party services</h2>
+    <p>The app uses third-party services that may collect and process certain data:</p>
+    <div class="card">
+      <ul>
+        <li><strong>Google AdMob (advertising):</strong> may collect the advertising identifier, device information, IP address and ad interaction data to show and measure ads, including optional rewarded ads.</li>
+        <li><strong>Firebase Cloud Messaging (notifications):</strong> uses a device/installation identifier and push token to deliver push notifications.</li>
+        <li><strong>Google Play Billing / Unity IAP (in-app purchases):</strong> purchases are processed by Google Play (or the Apple App Store on iOS). We do not receive or store your payment details.</li>
+        <li><strong>Unity Gaming Services:</strong> may process device information required to operate in-app purchases.</li>
+      </ul>
+    </div>
+    <p>These services have their own privacy policies:
+      <a href="https://policies.google.com/privacy">Google</a> ·
+      <a href="https://support.google.com/admob/answer/6128543">Google AdMob</a> ·
+      <a href="https://firebase.google.com/support/privacy">Firebase</a> ·
+      <a href="https://unity.com/legal/privacy-policy">Unity</a> ·
+      <a href="https://www.apple.com/legal/privacy/">Apple</a></p>
 
-<h2>Children</h2>
-<p>The app is not directed to children under 13 and we do not knowingly collect their personal information.</p>
+    <h2>Advertising</h2>
+    <p>The app shows ads. On Android you can reset or opt out of ad personalization in your device settings (Settings &gt; Google &gt; Ads). On iOS the app asks for permission through Apple's App Tracking Transparency prompt before the advertising identifier is used; if you decline, ads may still be shown but will not be personalized. You can change this choice at any time in your device settings.</p>
 
-<h2>Data deletion</h2>
-<p>We do not keep personal data on our own servers. You can remove locally stored data by uninstalling the app. For any request, contact us.</p>
+    <h2>Push notifications</h2>
+    <p>The app may ask for permission to send notifications, for example about game updates. You can turn notifications off at any time in your device settings.</p>
 
-<h2>Changes</h2>
-<p>We may update this policy; the latest version will be posted on this page.</p>
+    <h2>Children</h2>
+    <p>The app is not directed to children under 13 and we do not knowingly collect their personal information.</p>
 
-<h2>Contact</h2>
-<p>Fizzle Games – sseemmiihh.kcb@gmail.com</p>
+    <h2>Data deletion</h2>
+    <p>We do not keep personal data on our own servers. You can remove locally stored data by uninstalling the app. For any request, contact us.</p>
+
+    <h2>Changes</h2>
+    <p>We may update this policy; the latest version will be posted on this page.</p>
+
+    <h2>Contact</h2>
+    <p>Fizzle Games – <a href="mailto:sseemmiihh.kcb@gmail.com">sseemmiihh.kcb@gmail.com</a></p>
+  </section>
+
+  <section data-lang="tr">
+    <h1 class="title">Gizlilik Politikası</h1>
+    <p class="updated">Son güncelleme: 5 Kasım 2026</p>
+    <p>Bu politika, Fizzle Games tarafından yayınlanan "War Survivor Last Stand" ("uygulama") oyununun bilgileri nasıl işlediğini açıklar.</p>
+
+    <h2>Topladığımız bilgiler</h2>
+    <p>Hesap oluşturmanızı istemiyoruz; adınızı, e-posta adresinizi veya kesin konumunuzu toplamıyoruz. Oyun ilerlemeniz (altın, elmas, açılan karakterler ve haritalar, en iyi skorlar, ayarlar) cihazınızda saklanır ve sunucularımıza gönderilmez.</p>
+
+    <h2>Üçüncü taraf hizmetler</h2>
+    <p>Uygulama, bazı verileri toplayıp işleyebilen üçüncü taraf hizmetler kullanır:</p>
+    <div class="card">
+      <ul>
+        <li><strong>Google AdMob (reklam):</strong> isteğe bağlı ödüllü reklamlar dahil reklamları göstermek ve ölçmek için reklam kimliğini, cihaz bilgilerini, IP adresini ve reklam etkileşim verilerini toplayabilir.</li>
+        <li><strong>Firebase Cloud Messaging (bildirimler):</strong> anlık bildirim göndermek için bir cihaz/kurulum kimliği ve bildirim anahtarı (push token) kullanır.</li>
+        <li><strong>Google Play Faturalandırma / Unity IAP (uygulama içi satın alma):</strong> satın almalar Google Play (iOS'ta Apple App Store) tarafından işlenir. Ödeme bilgilerinizi almıyor ve saklamıyoruz.</li>
+        <li><strong>Unity Gaming Services:</strong> uygulama içi satın almaların çalışması için gereken cihaz bilgilerini işleyebilir.</li>
+      </ul>
+    </div>
+    <p>Bu hizmetlerin kendi gizlilik politikaları vardır:
+      <a href="https://policies.google.com/privacy">Google</a> ·
+      <a href="https://support.google.com/admob/answer/6128543">Google AdMob</a> ·
+      <a href="https://firebase.google.com/support/privacy">Firebase</a> ·
+      <a href="https://unity.com/legal/privacy-policy">Unity</a> ·
+      <a href="https://www.apple.com/legal/privacy/">Apple</a></p>
+
+    <h2>Reklamlar</h2>
+    <p>Uygulama reklam gösterir. Android'de reklam kişiselleştirmesini cihaz ayarlarından sıfırlayabilir veya kapatabilirsiniz (Ayarlar &gt; Google &gt; Reklamlar). iOS'ta uygulama, reklam kimliğini kullanmadan önce Apple'ın Uygulama Takip Şeffaflığı (App Tracking Transparency) penceresiyle izin ister; izin vermezseniz reklamlar yine gösterilebilir ancak kişiselleştirilmez. Bu tercihi istediğiniz zaman cihaz ayarlarından değiştirebilirsiniz.</p>
+
+    <h2>Anlık bildirimler</h2>
+    <p>Uygulama, örneğin oyun güncellemeleri hakkında bildirim göndermek için izin isteyebilir. Bildirimleri istediğiniz zaman cihaz ayarlarından kapatabilirsiniz.</p>
+
+    <h2>Çocuklar</h2>
+    <p>Uygulama 13 yaş altındaki çocuklara yönelik değildir ve bilerek onların kişisel bilgilerini toplamayız.</p>
+
+    <h2>Verilerin silinmesi</h2>
+    <p>Kendi sunucularımızda kişisel veri tutmuyoruz. Cihazınızda saklanan verileri uygulamayı silerek kaldırabilirsiniz. Her türlü talep için bize ulaşın.</p>
+
+    <h2>Değişiklikler</h2>
+    <p>Bu politikayı güncelleyebiliriz; en güncel hâli bu sayfada yayınlanır.</p>
+
+    <h2>İletişim</h2>
+    <p>Fizzle Games – <a href="mailto:sseemmiihh.kcb@gmail.com">sseemmiihh.kcb@gmail.com</a></p>
+  </section>
+
+  <footer>© 2026 Fizzle Games ·
+    <a href="https://fizzlegames.github.io/"><span data-lang="en">More games</span><span data-lang="tr">Diğer oyunlar</span></a>
+  </footer>
+</main>
 </body>
 </html>
