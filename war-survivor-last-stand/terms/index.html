@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms &amp; Conditions – War Survivor Last Stand</title>
+<meta name="description" content="Terms and conditions, including the pre-registration reward, for War Survivor Last Stand by Fizzle Games.">
+<link rel="icon" type="image/jpeg" href="../icon.jpg">
+<link rel="apple-touch-icon" href="../icon.jpg">
+<style>
+  :root { --bg: #14100e; --card: #1f1915; --text: #f1e9e2; --muted: #b8aa9e; --accent: #ff5a2c; --line: #3a2e26; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; line-height: 1.6; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 56px; }
+  .lang { display: flex; justify-content: flex-end; gap: 6px; margin-bottom: 20px; }
+  .lang button { background: transparent; color: var(--muted); border: 1px solid var(--line); border-radius: 8px; padding: 4px 12px; font: inherit; font-size: .9em; cursor: pointer; }
+  .lang button.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .hero { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+  .hero img { width: 140px; height: 140px; border-radius: 30px; box-shadow: 0 8px 30px rgba(255, 90, 44, .25); display: block; }
+  h1 { font-size: 2em; margin: 0 0 4px; line-height: 1.2; }
+  .by { color: var(--muted); margin: 0 0 14px; }
+  .btns { display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 10px 18px; border-radius: 10px; color: #fff; text-decoration: none; font-weight: 600; }
+  .btn.soon { background: transparent; border: 1px dashed var(--line); color: var(--muted); font-weight: 500; }
+  .btn.alt { background: transparent; border: 1px solid var(--line); color: var(--text); }
+  .title { margin: 40px 0 0; font-size: 1.6em; }
+  .updated { color: var(--muted); margin: 2px 0 0; font-size: .95em; }
+  h2 { font-size: 1.15em; margin: 30px 0 8px; color: var(--accent); }
+  ul { padding-left: 20px; margin: 0; }
+  li { margin: 6px 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin-top: 12px; }
+  a { color: #ff8a63; }
+  footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9em; }
+  html[lang="en"] [data-lang="tr"], html[lang="tr"] [data-lang="en"] { display: none !important; }
+</style>
+<script>
+  // Turkish browsers see Turkish first; everyone else sees English. The buttons switch it.
+  (function () {
+    var l = "en";
+    try { l = localStorage.getItem("lang") || ((navigator.language || "").toLowerCase().indexOf("tr") === 0 ? "tr" : "en"); } catch (e) {}
+    document.documentElement.lang = l;
+  })();
+  function setLang(l) {
+    document.documentElement.lang = l;
+    try { localStorage.setItem("lang", l); } catch (e) {}
+    document.querySelectorAll(".lang button").forEach(function (b) { b.classList.toggle("on", b.dataset.l === l); });
+  }
+  document.addEventListener("DOMContentLoaded", function () { setLang(document.documentElement.lang); });
+</script>
+</head>
+<body>
+<main>
+  <div class="lang">
+    <button type="button" data-l="en" onclick="setLang('en')">English</button>
+    <button type="button" data-l="tr" onclick="setLang('tr')">Türkçe</button>
+  </div>
+
+  <div class="hero">
+    <a href="https://fizzlegames.github.io/"><img src="../icon.jpg" alt="War Survivor Last Stand"></a>
+    <div>
+      <h1>War Survivor Last Stand</h1>
+      <p class="by" data-lang="en">by Fizzle Games · iPhone, iPad, Mac &amp; Android</p>
+      <p class="by" data-lang="tr">Fizzle Games · iPhone, iPad, Mac ve Android</p>
+      <div class="btns">
+        <span class="btn soon"><span data-lang="en">App Store &amp; Google Play – coming soon</span><span data-lang="tr">App Store ve Google Play – yakında</span></span>
+        <a class="btn alt" href="https://fizzlegames.github.io/"><span data-lang="en">More games</span><span data-lang="tr">Diğer oyunlar</span></a>
+      </div>
+    </div>
+  </div>
+
+  <section data-lang="en">
+    <h1 class="title">Terms &amp; Conditions</h1>
+    <p class="updated">Last updated: November 24, 2026</p>
+    <p>These terms apply to "War Survivor Last Stand" ("the game"), published by Fizzle Games. By downloading or playing the game you agree to them.</p>
+
+    <h2>Pre-registration reward</h2>
+    <div class="card">
+      <ul>
+        <li>Players who pre-register for the game on Google Play receive <strong>3,000 Gold</strong> as a one-time reward.</li>
+        <li>The reward is delivered automatically to the Google account that pre-registered, the first time the game is opened after launch while connected to the internet.</li>
+        <li>The reward can be received only once per Google account. It has no cash value, cannot be exchanged, transferred or refunded, and cannot be combined with other offers.</li>
+        <li>The reward is only available while the pre-registration campaign is active on Google Play and in the countries where the game is offered for pre-registration.</li>
+        <li>Fizzle Games may change or end the reward if required by Google Play policies.</li>
+      </ul>
+    </div>
+
+    <h2>Virtual items and purchases</h2>
+    <p>Gold, diamonds, characters, maps and other in-game items are licensed for use in the game only. They have no real-world value and cannot be exchanged for money. Purchases are processed by Google Play or the Apple App Store and are subject to their refund policies.</p>
+
+    <h2>Game data</h2>
+    <p>Game progress is stored on your device (and in your platform's cloud save if you sign in). Uninstalling the game or clearing its data may remove your progress.</p>
+
+    <h2>Fair play</h2>
+    <p>Do not use cheats, hacks or modified versions of the game. We may update the game, change features or balance at any time.</p>
+
+    <h2>Privacy</h2>
+    <p>How we handle data is described in our <a href="../privacy/">Privacy Policy</a>.</p>
+
+    <h2>Contact</h2>
+    <p>Fizzle Games – <a href="mailto:sseemmiihh.kcb@gmail.com">sseemmiihh.kcb@gmail.com</a></p>
+  </section>
+
+  <section data-lang="tr">
+    <h1 class="title">Şartlar ve Koşullar</h1>
+    <p class="updated">Son güncelleme: 24 Kasım 2026</p>
+    <p>Bu şartlar, Fizzle Games tarafından yayınlanan "War Survivor Last Stand" ("oyun") için geçerlidir. Oyunu indirerek veya oynayarak bu şartları kabul etmiş olursunuz.</p>
+
+    <h2>Ön kayıt ödülü</h2>
+    <div class="card">
+      <ul>
+        <li>Google Play'de oyuna ön kayıt yaptıran oyuncular tek seferlik ödül olarak <strong>3.000 Altın</strong> alır.</li>
+        <li>Ödül, oyun yayınlandıktan sonra ön kayıt yapılan Google hesabıyla oyun internete bağlıyken ilk kez açıldığında otomatik olarak verilir.</li>
+        <li>Ödül her Google hesabına yalnızca bir kez verilir. Nakit değeri yoktur; değiştirilemez, devredilemez, iade edilemez ve başka tekliflerle birleştirilemez.</li>
+        <li>Ödül yalnızca Google Play'deki ön kayıt kampanyası sürerken ve oyunun ön kayda açık olduğu ülkelerde geçerlidir.</li>
+        <li>Fizzle Games, Google Play politikaları gerektirirse ödülü değiştirebilir veya sonlandırabilir.</li>
+      </ul>
+    </div>
+
+    <h2>Sanal öğeler ve satın almalar</h2>
+    <p>Altın, elmas, karakterler, haritalar ve diğer oyun içi öğeler yalnızca oyunda kullanılmak üzere lisanslanır. Gerçek dünyada değerleri yoktur ve paraya çevrilemez. Satın almalar Google Play veya Apple App Store tarafından işlenir ve onların iade politikalarına tabidir.</p>
+
+    <h2>Oyun verileri</h2>
+    <p>Oyun ilerlemeniz cihazınızda (giriş yaptıysanız platformun bulut kaydında da) saklanır. Oyunu silmek veya verilerini temizlemek ilerlemenizi kaldırabilir.</p>
+
+    <h2>Adil oyun</h2>
+    <p>Hile, hack veya oyunun değiştirilmiş sürümlerini kullanmayın. Oyunu, özelliklerini veya dengesini istediğimiz zaman güncelleyebiliriz.</p>
+
+    <h2>Gizlilik</h2>
+    <p>Verileri nasıl işlediğimiz <a href="../privacy/">Gizlilik Politikamızda</a> açıklanmıştır.</p>
+
+    <h2>İletişim</h2>
+    <p>Fizzle Games – <a href="mailto:sseemmiihh.kcb@gmail.com">sseemmiihh.kcb@gmail.com</a></p>
+  </section>
+
+  <footer>© 2026 Fizzle Games ·
+    <a href="../privacy/"><span data-lang="en">Privacy Policy</span><span data-lang="tr">Gizlilik Politikası</span></a> ·
+    <a href="https://fizzlegames.github.io/"><span data-lang="en">More games</span><span data-lang="tr">Diğer oyunlar</span></a>
+  </footer>
+</main>
+</body>
+</html>
