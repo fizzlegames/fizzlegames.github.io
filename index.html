@@ -31,7 +31,13 @@
   h3 { margin: 40px 0 6px; font-size: 1.1em; }
   a { color: #d79bff; }
   footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9em; }
-  @media (max-width: 520px) { .game { flex-direction: column; } }
+  .links a.prereg { background: linear-gradient(180deg, #ffd65a, #f0a21a); border-color: #f0a21a; color: #2a1600; font-weight: 700; }
+  .promo { display: flex; align-items: center; gap: 16px; margin: 0 0 24px; padding: 16px 18px; border-radius: 16px; border: 1px solid #f0a21a; background: linear-gradient(135deg, #3a2208, #1a1724 70%); }
+  .promo img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+  .promo b { display: block; font-size: 1.1em; color: #ffd65a; }
+  .promo span.sub { color: var(--muted); font-size: .92em; }
+  .promo .cta { margin-left: auto; flex: none; padding: 10px 18px; border-radius: 10px; background: linear-gradient(180deg, #ffd65a, #f0a21a); color: #2a1600; font-weight: 700; text-decoration: none; white-space: nowrap; }
+  @media (max-width: 520px) { .game { flex-direction: column; } .promo { flex-wrap: wrap; } .promo .cta { margin-left: 0; width: 100%; text-align: center; } }
   html[lang="en"] [data-lang="tr"], html[lang="tr"] [data-lang="en"] { display: none !important; }
 </style>
 <script>
@@ -64,6 +70,17 @@
     </div>
   </header>
 
+  <div class="promo">
+    <a href="https://play.google.com/store/apps/details?id=com.fizzlegames.laststandwarsurvivor"><img src="img/laststand.jpg" alt="War Survivor Last Stand"></a>
+    <div>
+      <b data-lang="en">War Survivor Last Stand – Pre-registration is open!</b>
+      <b data-lang="tr">War Survivor Last Stand – Ön kayıt başladı!</b>
+      <span class="sub" data-lang="en">Pre-register on Google Play and get 3,000 Gold when the game launches.</span>
+      <span class="sub" data-lang="tr">Google Play'de ön kayıt yaptır, oyun çıktığında 3.000 Altın senin.</span>
+    </div>
+    <a class="cta" href="https://play.google.com/store/apps/details?id=com.fizzlegames.laststandwarsurvivor"><span data-lang="en">Pre-register – 3,000 Gold</span><span data-lang="tr">Ön Kayıt Ol – 3.000 Altın</span></a>
+  </div>
+
   <div class="games">
     <div class="game">
       <a href="https://apps.apple.com/app/id6809781155"><img src="img/ember.jpg" alt="Ember Survivors"></a>
@@ -95,14 +112,16 @@
     </div>
 
     <div class="game">
-      <img src="img/laststand.jpg" alt="War Survivor Last Stand">
+      <a href="https://play.google.com/store/apps/details?id=com.fizzlegames.laststandwarsurvivor"><img src="img/laststand.jpg" alt="War Survivor Last Stand"></a>
       <div>
         <h2>War Survivor Last Stand</h2>
         <p data-lang="en">Endless monster waves, mighty bosses, one last hero. Choose from 4 heroes, fight across 7 maps and make your last stand.</p>
         <p data-lang="tr">Sonsuz canavar dalgaları, güçlü patronlar, tek bir kahraman. 4 kahramandan birini seç, 7 haritada savaş ve son savaşını ver.</p>
         <div class="links">
-          <span class="soon" data-lang="en">App Store &amp; Google Play – coming soon</span>
-          <span class="soon" data-lang="tr">App Store ve Google Play – yakında</span>
+          <a class="prereg" href="https://play.google.com/store/apps/details?id=com.fizzlegames.laststandwarsurvivor"><span data-lang="en">Pre-register – 3,000 Gold</span><span data-lang="tr">Ön Kayıt Ol – 3.000 Altın</span></a>
+          <a class="store" href="https://play.google.com/store/apps/details?id=com.fizzlegames.laststandwarsurvivor">Google Play</a>
+          <span class="soon" data-lang="en">App Store – coming soon</span>
+          <span class="soon" data-lang="tr">App Store – yakında</span>
           <a href="war-survivor-last-stand/privacy/"><span data-lang="en">Privacy Policy</span><span data-lang="tr">Gizlilik Politikası</span></a>
         </div>
       </div>
